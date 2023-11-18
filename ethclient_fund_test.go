@@ -8,6 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/flyworker/ether-test/contracts"
 	"github.com/joho/godotenv"
 	"math/big"
 	"os"
@@ -107,7 +108,7 @@ func TestWriteMessageToContract(t *testing.T) {
 	}
 
 	contractAddress := common.HexToAddress("0xBEE4684EA19D09ae89038B09381c548e3202AaaA")
-	msgContract, err := contract.NewMessageContract(contractAddress, client)
+	msgContract, err := contracts.NewMessageContract(contractAddress, client)
 	if err != nil {
 		t.Fatalf("Failed to instantiate the contract: %v", err)
 	}
