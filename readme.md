@@ -31,7 +31,6 @@ Set up your `.env` file with the necessary environment variables:
 
 ```
 SENDER_PRIVATE_KEY=your_private_key
-RPC_URL=your_ethereum_node_url
 ```
 
 ## Test Files

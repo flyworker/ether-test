@@ -30,7 +30,7 @@ func TestTransferEth(t *testing.T) {
 	}
 
 	recipientAddress := "0x96216849c49358B10257cb55b28eA603c874b05E" // Replace with recipient's address
-	amount := big.NewInt(100000000000)                               // 0.0000001 ETH in Wei
+	amount := big.NewInt(100000000000000)                            // 0.0000001 ETH in Wei
 
 	client, err := ethclient.Dial(rpcURL)
 	if err != nil {
