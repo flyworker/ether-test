@@ -1,7 +1,3 @@
-To create a README for your Go Ethereum project which includes the files `config_test.go`, `ethclient_fund_test.go`, and `ethclient_test.go`, you'll want to outline the purpose of the project, prerequisites, setup instructions, and a description of each test file's functionality. Below is a template you can use to start your README:
-
----
-
 # Go Ethereum Test Suite
 
 ## Overview
