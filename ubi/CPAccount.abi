@@ -1,0 +1,215 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newBeneficiary",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "newQuota",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "newExpiration",
+				"type": "uint256"
+			}
+		],
+		"name": "changeBeneficiary",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string[]",
+				"name": "newMultiaddrs",
+				"type": "string[]"
+			}
+		],
+		"name": "changeMultiaddrs",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwnerAddress",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_taskId",
+				"type": "string"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_taskType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "_proof",
+				"type": "string"
+			}
+		],
+		"name": "submitUBIProof",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_windowPoStProofType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "_peerId",
+				"type": "string"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_multiAddresses",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "beneficiary",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "beneficiaryAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quota",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "expiration",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "multiAddresses",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "peerId",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "tasks",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "taskId",
+				"type": "string"
+			},
+			{
+				"internalType": "uint8",
+				"name": "taskType",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "proof",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "isSubmitted",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "windowPoStProofType",
+		"outputs": [
+			{
+				"internalType": "uint8",
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

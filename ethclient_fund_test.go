@@ -3,12 +3,12 @@ package main // Use the appropriate package name
 import (
 	"context"
 	"crypto/ecdsa"
+	"ether-test/contract"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/flyworker/ether-test/contract"
 	"github.com/joho/godotenv"
 	"math/big"
 	"os"
@@ -123,7 +123,7 @@ func TestWriteMessageToContract(t *testing.T) {
 		t.Fatalf("Failed to instantiate the contract: %v", err)
 	}
 
-	tx, err := msgContract.WriteMessage(auth, "Hello, Swan Chain!")
+	tx, err := msgContract.WriteMessage(auth, "{node_id: 0x11111111, ubi: 0}")
 	if err != nil {
 		t.Fatalf("Failed to send transaction: %v", err)
 	}
